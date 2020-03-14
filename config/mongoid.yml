@@ -5,15 +5,16 @@ development:
     default:
       # Mongoid can connect to a URI accepted by the driver:
       # uri: mongodb://user:password@mongodb.domain.com:27017/hexa_institute_development
+      # uri: mongodb://hexaadmin:hexapassword@hexa_mongo_dev:27017
 
       # Otherwise define the parameters separately.
       # This defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: hexa_mongo 
+      database: hexa_institute_dev 
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - hexa_mongo:27017
+        - localhost:6969
       options:
         # Note that all options listed below are Ruby driver client options (the mongo gem).
         # Please refer to the driver documentation of the version of the mongo gem you are using
@@ -32,14 +33,14 @@ development:
         #     - use: web
 
         # The name of the user for authentication.
-         user: 'hexaadmin'
+        # user: 'hexaadmin'
 
         # The password of the user for authentication.
-         password: 'hexapassword'
+        # password: 'hexapassword'
 
         # The user's database roles.
-         roles:
-           - 'readWrite'
+        # roles:
+        #  - 'readWrite'
 
         # Change the default authentication mechanism. Valid options are: :scram,
         # :mongodb_cr, :mongodb_x509, and :plain. Note that all authentication
@@ -161,9 +162,9 @@ development:
 test:
   clients:
     default:
-      database: hexa_mongo_test
+      database: hexa_institute_test 
       hosts:
-        - hexa_mongo:27017
+        - localhost:6969
       options:
         read:
           mode: :primary
