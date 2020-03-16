@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Program:</strong>
+  <%= @institute.program %>
+</p>
+
+<p>
+  <strong>Total student:</strong>
+  <%= @institute.total_student %>
+</p>
+
+<p>
+  <strong>Total classroom:</strong>
+  <%= @institute.total_classroom %>
+</p>
+
+<%= link_to 'Edit', edit_institute_path(@institute) %> |
+<%= link_to 'Back', institutes_path %>

@@ -1,7 +1,7 @@
-class Student
+class Institute
   include Mongoid::Document
   include Mongoid::Timestamps
-  field :name, type: String
   field :program, type: Integer
-  embeds_many :semesterlyplan
+  field :total_student, type: Integer
+  field :total_classroom, type: Integer
 end
