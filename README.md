@@ -13,7 +13,8 @@ Hexa Institute
 ```sh
   $ docker-compose up -d
 ```
-## Run docker build(app is not finished tentative command):
+## Run docker build:
+**Note**: APP is not fully build yet, might have bugs with the command below this point
 ```sh
   $ docker build
 ```
