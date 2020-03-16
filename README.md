@@ -1,7 +1,7 @@
 # Hexa-Institute
-Hexa Institute
+Hexa Institute Software Solution for Academic Administration
 
-## To Start the App you need to run:
+## To Start the App:
 
 ## Clone the files:
 ```sh
