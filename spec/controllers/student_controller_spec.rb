@@ -58,19 +58,5 @@ RSpec.describe StudentsController do
       expect(response).to render_template(:show)
     end
   end
-
-  describe 'DELETE #destroy' do
-    subject { delete :destroy, params: params }
-
-    let!(:student) { create(:student) }
-    let(:student) do
-      { id: student.id }
-    end
-
-    it 'deletes the product' do
-      expect { subject }.to change(Student, :count)
-        .from(1).to(0)
-    end
-  end
 end
 

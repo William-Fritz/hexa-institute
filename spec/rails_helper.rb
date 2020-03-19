@@ -55,6 +55,16 @@ RSpec.configure do |config|
   
   # config for mongoid matchers
   config.include Mongoid::Matchers, type: :model
+
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation
+    DatabaseCleaner.orm = "mongoid"
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.clean
+  end
+
   
   # config for shoulda matcher
   Shoulda::Matchers.configure do |config|
