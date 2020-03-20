@@ -13,6 +13,12 @@ Hexa Institute Software Solution for Academic Administration
 ```sh
   $ docker-compose up -d
 ```
+
+## Run docker compose start:
+```sh
+  $ docker-compose start
+```
+
 ## Run docker build:
 **Note**: APP is not fully build yet, might have bugs with the command below this point
 ```sh
